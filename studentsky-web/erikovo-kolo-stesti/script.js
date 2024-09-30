@@ -6,8 +6,8 @@ const originalSegments = [
     { label: "Barbora Krčilová", color: "#F0E68C", probability: 0.316 },  // 40% šance
     { label: "David Wachtl", color: "#FF5733", probability: 0.316 },  // 10% šance
     { label: "Dominik Klement", color: "#33FF57", probability: 0.208 },  // 20% šance
-    { label: "Dominik Pučálka", color: "#3357FF", probability: 0.750 },  // 30% šance
-    { label: "Dominika Kašparová", color: "#F0E68C", probability: 0.792 },
+    { label: "Dominik Pučálka", color: "#3357FF", probability: 3.750 },  // 30% šance
+    { label: "Dominika Kašparová", color: "#F0E68C", probability: 3.792 },
     { label: "Hubert Gottfried", color: "#FF5733", probability: 0.316 },  // 10% šance
     { label: "Jakub Toman", color: "#33FF57", probability: 0.316 },  // 20% šance
     { label: "Jolana Veselá", color: "#3357FF", probability: 0.316 },  // 30% šance
@@ -15,13 +15,13 @@ const originalSegments = [
     { label: "Justýna Perglerová", color: "#FF5733", probability: 0.316 },  // 10% šance
     { label: "Marián Randus", color: "#33FF57", probability: 0.316 },  // 20% šance
     { label: "Martin Kašpárek", color: "#3357FF", probability: 0.316 },  // 30% šance
-    { label: "Martin Lavický", color: "#F0E68C", probability: 0.820 },
-    { label: "Matyáš Radovan Hakl", color: "#FF5733", probability: 0.708 },  // 10% šance
+    { label: "Martin Lavický", color: "#F0E68C", probability: 3.820 },
+    { label: "Matyáš Radovan Hakl", color: "#FF5733", probability: 3.708 },  // 10% šance
     { label: "Michal Šustr", color: "#33FF57", probability: 0.316 },  // 20% šance
     { label: "Mikuláš Kopečný", color: "#3357FF", probability: 0.316},  // 30% šance
     { label: "Natálie Bartošová", color: "#F0E68C", probability: 0.316 },
-    { label: "Nikola Macháčková", color: "#FF5733", probability: 0.750 },  // 10% šance
-    { label: "Sára Dobiášová", color: "#33FF57", probability: 0.708 },  // 20% šance
+    { label: "Nikola Macháčková", color: "#FF5733", probability: 3.750 },  // 10% šance
+    { label: "Sára Dobiášová", color: "#33FF57", probability: 3.708 },  // 20% šance
     { label: "Tomáš Krejčí", color: "#3357FF", probability: 0.208 },  // 30% šance
     { label: "Tomáš Senar", color: "#F0E68C", probability: 0.316 },
 ];

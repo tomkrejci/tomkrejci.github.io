@@ -1,12 +1,13 @@
-// Nastavení segmentů a pravděpodobností
-let segments = [
+// Původní nastavení segmentů a pravděpodobností
+const originalSegments = [
     { label: "Výhra 1", color: "#FF5733", probability: 0.1 },  // 10% šance
     { label: "Výhra 2", color: "#33FF57", probability: 0.2 },  // 20% šance
     { label: "Výhra 3", color: "#3357FF", probability: 0.3 },  // 30% šance
     { label: "Nevýhra", color: "#F0E68C", probability: 0.4 },  // 40% šance
 ];
 
-// Vytvoření váženého seznamu
+// Inicializace segmentů a váženého seznamu
+let segments = [...originalSegments];  // Kopie původních segmentů
 let weightedSegments = createWeightedSegments(segments);
 
 // Funkce pro vytvoření váženého seznamu
@@ -24,6 +25,7 @@ function createWeightedSegments(segments) {
 const canvas = document.getElementById('wheelCanvas');
 const ctx = canvas.getContext('2d');
 const spinButton = document.getElementById('spinButton');
+const resetButton = document.getElementById('resetButton');
 const wheelRadius = canvas.width / 2;
 const center = { x: wheelRadius, y: wheelRadius };
 let rotationAngle = 0;
@@ -125,5 +127,14 @@ function removeSegment(segment) {
     }
 }
 
+// Funkce pro resetování kola
+function resetWheel() {
+    segments = [...originalSegments];  // Obnovíme původní segmenty
+    weightedSegments = createWeightedSegments(segments);  // Znovu vytvoříme vážený seznam
+    rotationAngle = 0;  // Resetujeme rotaci
+    drawWheel();  // Znovu vykreslíme kolo
+}
+
 drawWheel();
 spinButton.addEventListener('click', spinWheel);
+resetButton.addEventListener('click', resetWheel);

@@ -1,21 +1,36 @@
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
     font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 50px;
 }
 
-.wheel-container {
-    position: relative;
+.container {
+    text-align: center;
 }
 
 canvas {
-    border: 5px solid #333;
-    border-radius: 50%;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+.buttons {
+    margin-top: 20px;
 }
 
 button {
-    margin-top: 20px;
     padding: 10px 20px;
-    font-size: 18px;
+    margin: 0 10px;
+    font-size: 16px;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
